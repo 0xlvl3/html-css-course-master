@@ -1,0 +1,128 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* ids can only be used once */
+#copyright {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.related-bullet-points {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #cecece;
+}
+
+aside {
+  background-color: #cecece;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* using Pseudo class to select the first li element of it's parent element
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child() {
+  font-size: 15px;
+} 
+
+article p:last-child {
+  color: red;
+}
+
+*/
+
+/* STYLING LINKS 
+
+below targets all anchor tags that have hrefs */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+/* when hovering over anchor tag will emmit specified properties and values */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* when anchor tag is click */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* LVAH - link, visited, hover, active */
