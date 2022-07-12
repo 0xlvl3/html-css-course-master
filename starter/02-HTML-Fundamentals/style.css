@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4; /* didn't think of this */
+}
+
+.container {
+  border: 5px solid black;
+  width: 825px;
+  margin: 50px auto;
+}
+
+/* ARTICLE */
+
+h1 {
+  text-align: center;
+  background-color: #e6e6e6b4;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.heading-details {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.article-product-list {
+  list-style: square;
+  margin-left: 25px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 5px;
+}
+
+.price {
+  margin: 0;
+}
+
+.free-shipping {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+.more-information:link,
+.more-information:visited {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.more-information:hover,
+.more-information:active {
+  text-decoration: none;
+}
+
+/* BUTTON */
+
+.btn-add {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-add:hover {
+  background-color: white;
+  color: black;
+  border: white;
+  font-weight: bold;
+  border: 5px solid black;
+  border-right: 0;
+}

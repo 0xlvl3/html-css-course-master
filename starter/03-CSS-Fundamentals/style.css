@@ -1,12 +1,61 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* universal selector will effect every single element on the page
+has the lowest priority on the page */
+* {
+  /* border-top: 10px solid #1098ad; */
+  /* gobal reset, usually the first thing that you should do */
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE SECTIONS */
+
+body {
   font-family: sans-serif;
   color: #444;
+  position: relative;
+
+  border-top: 10px solid #1098ad;
 }
+
+/* trick to center the whole page */
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto; /* same as above */
+}
+
+.main-header {
+  background-color: #cecece;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px; /* same as above, shorthand padding:(top&bottom)(left&right) */
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+} /* same as above */
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #cecece;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* SMALLER ELEMENTS */
 
 h1,
 h2,
@@ -22,10 +71,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -37,6 +89,7 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 a {
@@ -46,6 +99,17 @@ a {
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* ids can only be used once */
@@ -66,16 +130,6 @@ li {
 
 .related-bullet-points {
   list-style: none;
-}
-
-.main-header {
-  background-color: #cecece;
-}
-
-aside {
-  background-color: #cecece;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* .first-li {
@@ -126,3 +180,36 @@ a:active {
   font-style: italic;
 }
 /* LVAH - link, visited, hover, active */
+
+.post-img {
+  /* % will always stay 100% of the page even if the size moved */
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered; */
+  margin-top: 10px;
+  padding-right: 30px;
+
+  /* display: block; renders our inline elements as block elements */
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* nav a:link,
+nav p:link{
+  font-size: 18px;
+} */
+
+.btn-like {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
