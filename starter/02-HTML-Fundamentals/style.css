@@ -22,6 +22,7 @@ h1 {
   font-size: 24px;
   margin-bottom: 20px;
   padding: 10px;
+  position: relative;
 }
 
 .heading-details {
@@ -62,12 +63,57 @@ li:last-child {
 .more-information:link,
 .more-information:visited {
   color: black;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .more-information:hover,
 .more-information:active {
   text-decoration: none;
+}
+
+/* BLOCK COLORS */
+
+.blocks {
+  margin-top: 15px;
+  display: inline-flex;
+}
+
+.block-black {
+  background-color: black;
+  width: 25px;
+  height: 25px;
+}
+
+.block-blue {
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
+}
+.block-red {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
+}
+.block-orange {
+  background-color: orange;
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
+}
+.block-green {
+  background-color: green;
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
+}
+.block-brown {
+  background-color: brown;
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
 }
 
 /* BUTTON */
@@ -90,4 +136,17 @@ li:last-child {
   font-weight: bold;
   border: 5px solid black;
   border-right: 0;
+}
+
+h1::after {
+  content: "SALE";
+  background-color: red;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  padding: 5px 10px;
+  letter-spacing: 1.5px;
+  display: inline-block;
 }

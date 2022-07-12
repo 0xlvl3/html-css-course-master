@@ -69,9 +69,16 @@ h1 {
   font-style: italic;
 }
 
+/* Pseudo elements are selected with two :: */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  position: absolute;
 }
 
 h3 {
@@ -212,4 +219,26 @@ nav p:link{
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+/* adjacent sibling selector, meaning they are inline with the h3 
+h3 + p::first-line {
+  color: red; 
+} */
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-style: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -100px;
+}
+
+.luara-jones {
+  margin-top: 10px;
+  display: block;
 }
